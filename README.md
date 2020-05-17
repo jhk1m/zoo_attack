@@ -7,11 +7,13 @@ Note : The input to the Input layer of all models will be pre-shuffled to be in 
 MLSTM FCN model : model = generate_model()
 
 Training
+
 To train the a model, uncomment the line below and execute the script. Note that '???????' will already be provided, so there is no need to replace it. It refers to the prefix of the saved weight file. Also, if weights are already provided, this operation will overwrite those weights.
 
 train_model(model, DATASET_INDEX, dataset_prefix='???????', epochs=250, batch_size=128)
 
 Evaluate
+
 To evaluate the performance of the model, simply execute the script with the below line uncommented.
 
 evaluate_model(model, DATASET_INDEX, dataset_prefix='???????', batch_size=128)
